@@ -4,6 +4,7 @@
 
 html {
   box-sizing: border-box;
+  font-family: 'roboto', sans-serif;
 }
 
 *, *:before, *:after {
@@ -18,7 +19,10 @@ body {
   min-height: 100vh;
 }
 
+/*navigation */
+
 .navigation {
+  background: transparent;
   display: none;
   position: fixed;
   width: 100%;
@@ -30,24 +34,55 @@ body {
     list-style-type: none;
     padding: 0;
     text-align: center;
-  
-    .navigation__link {
-      color: #000;
-      line-height: 45px;
-      text-decoration: none;
-      transition: color 0.2s linear;
-  
-      .fa-mountain, .fa-github-square, .fa-linkedin, .fa-male, .fa-file-signature {
-        font-size: 2rem;
-        margin-right: 10px;
-      }
-  
+
+    @media screen and (min-width: 641px) {
+      flex-direction: row;
+      justify-content: center;
+    }
+
+  }
+
+  &__item:nth-of-type(1) {
+    @media screen and (min-width: 641px) {
+      margin-right: 45px;
+    }
+
+  }
+
+  &__item:nth-of-type(2) {
+     @media screen and (min-width: 641px) {
+      margin-left: 45px;
+      margin-right: 45px;
+    }
+
+  }
+
+  &__item:nth-of-type(3) {
+     @media screen and (min-width: 641px) {
+      margin-left: 45px;
+    }
+
+  }
+
+  &__link {
+    color: #000;
+    line-height: 45px;
+    text-decoration: none;
+    transition: color 0.2s linear;
+    
+    .fa-mountain, .fa-github-square, .fa-linkedin, .fa-male, .fa-file-signature {
+      font-size: 2rem;
+      margin-right: 10px;
     }
     
-    .navigation__link:hover {
-      color: #72EABA;
-    }
-  
+  }
+      
+  &__link:hover {
+    color: #72EABA;
+  }
+
+  @media screen and (min-width: 641px) {
+    display: block;
   }
 
 }
@@ -73,4 +108,8 @@ body {
     font-size: 2rem;
   }
   
+  @media screen and (min-width: 641px) {
+    display: none;
+  }
+
 }
