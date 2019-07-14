@@ -222,3 +222,63 @@ body {
 
 }
 
+/*footer*/
+
+.footer {
+  background-color: #000;
+  grid-row-end: 5;
+  grid-row-start: 4;
+  padding: 40px 0 60px 0;
+  position: relative;
+
+  .navigation__footer {
+
+    position: relative;
+
+    &-list {
+      display: flex;
+      margin: 0;
+      justify-content: center;
+    }
+
+    &-item {
+      
+      .navigation__link--color {
+        color: #fff;
+        text-decoration: none;
+
+        &:nth-of-type(1) {
+          margin-right: 30px;
+        }
+
+        &:nth-of-type(2) {
+          margin-left: 30px;
+        }
+
+        .fa-github-square, .fa-linkedin {
+          font-size: 2rem;
+          margin-right: 10px;
+        }
+
+      }
+
+    }
+
+  }
+
+  .fa-arrow-circle-up {
+    color: #fff;
+    font-size: 2rem;
+    left: 90%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: color 0.2s linear;
+
+    &:hover {
+      color: #00f;
+    }
+
+  }
+
+}
