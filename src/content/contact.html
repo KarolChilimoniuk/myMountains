@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>myMountains</title>
+	<link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/main.css">
+  <script src="https://kit.fontawesome.com/187335cbf2.js"></script>
+  <script src="js/main.js" defer></script>
+</head>
+</head>
+<body>
+    <div class="wrapper">
+            <nav class="navigation navigation--js" id="nav">
+                    <ul class="navigation__list">
+                        <li class="navigation__item"><a href="index.html" class="navigation__link"><i class="fas fa-mountain"></i>Góry</a></li>
+						<li class="navigation__item"><a href="index.html" class="navigation__link"><i class="fas fa-male"></i>O mnie</a></li>
+						<li class="navigation__item"><a href="#about" class="navigation__link" target="_blank"><i class="fas fa-file-signature"></i>Kontakt</a></li>
+					</ul>
+			</nav>
+            <button class="menu__switcher menu__switcher--js " aria-label="open the menu"><i class="fas fa-bars"></i></button>
+
+            <main class="contact">
+                 <section class="introduction">
+                        <img class="introduction__img" src="assets/img/img.png" alt="Karol Chilimoniuk">
+                        <h1 class="introduction__title">Karol Chilimoniuk</h1>
+                        <p class="introduction__paragraph">Nazywam się Karol. Jestem 25 letnim fan dobrej muzyki (z naciskiem na rock), wszelkiego rodzaju gier (elektronicznych jak i planszowych), od roku zafascynowany światem frontendu. Moim celem jest nabycie umiejętności, które pozwolą mi w przyszłości podjąć pracę na stanowisku juniora. Oprócz powyższych, wielki fan gór i literatury (zwłaszcza fantasy isci-fi). Na tej stronie używam po prostu tego, co przerabiam na kursie, w trakcie przerabiania którego akurat jestem.</p>
+                        <p class="introduction__paragraph--transform">
+                            Aby się ze mną skontaktować wypełnij formularz.
+                        </p>
+                    </section> 
+                 <div class="form__container">
+                        <form action="http://dev.cotenfrontend.pl" method="post" class="form">
+                           <p class="form__paragraph">
+                               <label for="name" class="form__label">Imię</label>
+                               <input type="text" name="name" id="name" placeholder="Name" class="form__input" required>
+                           </p>
+                           <p class="form__paragraph">
+                               <label for="surname" class="form__label">Nazwisko</label>
+                               <input type="text" name="surname" id="surname" placeholder="Surname" class="form__input" required>
+                           </p>
+                           <p class="form__paragraph">
+                               <label for="age" class="form__label">Wiek</label>
+                               <input type="date" name="age" id="age" class="form__input" required>
+                           </p>
+                           <p class="form__paragraph">
+                                <label for="email" class="form__label">email</label>
+                                <input type="email" name="email" id="email" placeholder="Email" class="form__input" required> 
+                           </p>
+                           <fieldset class="form__fieldset">
+                             <legend class="fieldset__header">Płeć</legend>
+                             <p class="form__paragraph">
+                                 <label for="gender1" class="form__label">Mężczyzna</label>
+                                 <input type="radio" name="gender1" id="gender1" class="form_input">
+                             </p>
+                             <p class="form__paragraph">
+                                 <label for="gender2" class="form__label">Kobieta</label>
+                                 <input type="radio" name="gender2" id="gender2" class="form_input">
+                             </p>
+                            </fieldset>  
+                             <p class="form__paragraph">
+                                 <label for="textarea" class="form__label">Wiadomość</label>
+                                 <textarea name="textarea" id="textarea" class="form__textarea"></textarea>
+                             </p>
+                             <p class="form__paragraph">
+                                 <label for="file" class="form__label">Prześlij plik</label>
+                                 <input type="file" name="file" id="file" class="form__input">
+                             </p>
+                            <fieldset class="form__fieldset">
+                            <legend class="form__legend">Zgody</legend>
+                             <p class="form__paragraph--grid">
+                                <label for="checkbox" class="form_label">RODO</label>
+                                <input type="checkbox" name="checkbox" id="checkbox" class="form__input">
+                            </p>
+                            <p class="form__paragraph--grid">
+                                <label for="checkbox2" class="form_label">Marketing</label>
+                                <input type="checkbox" name="checkbox2" id="checkbox2" class="form__input">
+                            </p>
+                            <p class="form__paragraph--grid">
+                                <label for="checkbox3" class="form_label">Newsletter</label>
+                                <input type="checkbox" name="checkbox3" id="checkbox3" class="form__input">
+                            </p>
+                            </fieldset> 
+                             <p class="form__paragraph">
+                                <input type="submit" class="form__input--style" value="Wyślij">
+                            </p>
+                        </form>
+                 </div>
+            </main>
+            
+            <footer class="footer">
+					<nav class="navigation__footer">
+							<ul class="navigation__footer-list">
+								<li class="navigation__footer-item"><a href="https://github.com/KarolChilimoniuk" class="navigation__link--color" target="_blank"><i class="fab fa-github-square"></i>GIT</a></li>
+								<li class="navigation__footer-item"><a href="" class="navigation__link--color"><i class="fab fa-linkedin"></i>LinkedIn</a></li>
+							</ul>
+					</nav>
+					<a href="#nav"><i class="fas fa-arrow-circle-up"></i></a> 
+			</footer>
+    </div>
+    <script src="script/script.js"></script>
+</body>
+</html>
