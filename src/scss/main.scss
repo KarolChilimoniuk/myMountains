@@ -113,3 +113,28 @@ body {
   }
 
 }
+
+/*header*/
+
+.header {
+  grid-row-end: 3;
+  grid-row-start: 2;
+  padding: 120px 60px 20px 60px;
+  text-align: center;
+
+  &__container {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__img {
+    border-top-left-radius: 55%;
+    border-top-right-radius: 45%;
+    border-bottom-right-radius: 60%;
+    border-bottom-left-radius: 40%;
+    margin: auto;
+    width: 190px;
+  }
+  
+}
