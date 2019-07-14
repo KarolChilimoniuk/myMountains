@@ -11,6 +11,66 @@ html {
 }
 
 body {
-  color: $yellow;
-  background: $violet;
+  background: linear-gradient(180deg, rgba(69,60,172,0.9752275910364145) 21%, rgba(119,133,206,1) 90%);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 80px auto auto 50px;
+  min-height: 100vh;
+}
+
+.navigation {
+  display: none;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+  
+    .navigation__link {
+      color: #000;
+      line-height: 45px;
+      text-decoration: none;
+      transition: color 0.2s linear;
+  
+      .fa-mountain, .fa-github-square, .fa-linkedin, .fa-male, .fa-file-signature {
+        font-size: 2rem;
+        margin-right: 10px;
+      }
+  
+    }
+    
+    .navigation__link:hover {
+      color: #72EABA;
+    }
+  
+  }
+
+}
+
+.navigation--visible {
+  background-color: #A6CEF4;
+  display: block;
+  width: 100%;
+  z-index: 2;
+}
+
+.menu__switcher {
+  background-color: transparent;
+  border: 0;
+  height: 50px;
+  left: 20px;
+  position: fixed;
+  top: 20px;
+  width: 50px;
+  z-index: 2;
+
+  .fa-bars, .fa-times {
+    font-size: 2rem;
+  }
+  
 }

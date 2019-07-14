@@ -1,15 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-  <link rel="stylesheet" href="css/main.css">
+	<title>myMountains</title>
+	<link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/main.css">
+  <script src="https://kit.fontawesome.com/187335cbf2.js"></script>
+  <script src="js/main.js" defer></script>
 </head>
 <body>
-  <h1>Hello world!</h1>
+  <nav class="navigation navigation--js" id="nav">
+    <ul class="navigation__list">
+        <li class="navigation__item"><a href="#mountains" class="navigation__link"><i class="fas fa-mountain"></i>Góry</a></li>
+        <li class="navigation__item"><a href="#about" class="navigation__link" target="_blank"><i class="fas fa-male"></i>O mnie</a></li>
+        <li class="navigation__item"><a href="contact.html" class="navigation__link" target="_blank"><i class="fas fa-file-signature"></i>Kontakt</a></li>
+    </ul>
+  </nav>
+  <button class="menu__switcher menu__switcher--js " aria-label="open the menu"><i class="fas fa-bars"></i></button>
   
-  <script src="js/main.js"></script>
 </body>
 </html>
