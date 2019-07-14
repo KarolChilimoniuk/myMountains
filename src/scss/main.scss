@@ -5,7 +5,7 @@
 
 html {
   box-sizing: border-box;
-  font-family: 'roboto', sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 
 *, *:before, *:after {
@@ -168,7 +168,7 @@ body {
   }
 
   &__article {
-    background-color: #72EABA;
+    background-color: #7BBEFF;
     display: flex;
     flex-direction: column;
     margin-bottom: 30px;
@@ -189,12 +189,20 @@ body {
         width: 60%;
       }
 
+      &:hover>.main__article-img {
+        width: 70%;
+      }
+
     }
 
     &-title {
       margin: 0;
       padding-top: 30px;
       text-align: center;
+    }
+
+    &:nth-of-type(3),  &:nth-of-type(4) {
+      align-self: flex-end;
     }
 
     @media screen and (min-width: 641px) {
@@ -210,9 +218,16 @@ body {
 
   &__article-link {
     bottom: 5%;
+    color: #00376C;
     left: 10%;
+    cursor: pointer;
     position: absolute;
     text-decoration: none;
+
+    &:hover {
+      color: #fff;
+    }
+
  }
 
  @media screen and (min-width: 641px) {
@@ -259,6 +274,10 @@ body {
         .fa-github-square, .fa-linkedin {
           font-size: 2rem;
           margin-right: 10px;
+        }
+
+        &:hover {
+          color: #00F;
         }
 
       }

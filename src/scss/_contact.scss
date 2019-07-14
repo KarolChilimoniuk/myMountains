@@ -62,12 +62,17 @@
                 border: 0;
                 border-bottom: 2px solid #72EABA;
     
-                &--style {
+                &--css-style {
                     background-color: transparent;
                     border: 1px solid #000;
                     margin: auto;
                     padding: 10px;
                     width: 150px;
+
+                    &:hover {
+                        color: #fff;
+                        border: 1px solid #fff;
+                    }
                 }
 
                 &::placeholder {
