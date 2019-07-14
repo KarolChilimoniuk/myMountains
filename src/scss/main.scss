@@ -202,7 +202,9 @@ body {
     }
 
     &:nth-of-type(3),  &:nth-of-type(4) {
-      align-self: flex-end;
+      @media screen and (min-width: 641px) {
+        align-self: flex-end;
+      }
     }
 
     @media screen and (min-width: 641px) {
