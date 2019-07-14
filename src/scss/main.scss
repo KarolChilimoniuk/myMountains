@@ -175,7 +175,7 @@ body {
     order: 1;
     padding: 30px 30px 30px 30px;
     position: relative;
-    width: 90%;
+    width: 80%;
 
     .img__container { 
       text-align: center;
@@ -186,7 +186,7 @@ body {
         border-top-left-radius: 55%;
         border-top-right-radius: 59%;
         transition: height 0.2s linear, width 0.2s linear;
-        width: 60%;
+        width: 50%;
       }
 
       &:hover>.main__article-img {
