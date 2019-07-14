@@ -122,6 +122,10 @@ body {
   padding: 120px 60px 20px 60px;
   text-align: center;
 
+  &__title {
+    font-size: 3rem;
+  }
+
   &__container {
     display:flex;
     flex-direction: column;
@@ -153,7 +157,13 @@ body {
 
   &__title {
     flex-basis: 100%;
+    font-size: 2rem;
     text-align: center;
+
+   @media screen and (min-width: 641px) {
+       padding-bottom: 30px;
+    }
+
   }
 
   &__article {
@@ -178,12 +188,16 @@ body {
         width: 60%;
       }
 
-     }
+    }
 
     &-title {
       margin: 0;
       padding-top: 30px;
       text-align: center;
+    }
+
+    @media screen and (min-width: 641px) {
+      width: 46%;
     }
 
   }
@@ -200,4 +214,11 @@ body {
     text-decoration: none;
  }
 
+ @media screen and (min-width: 641px) {
+    align-items: flex-start;
+    flex-direction: row;
+    justify-content: space-around;
+ }
+
 }
+
