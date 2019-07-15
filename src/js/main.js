@@ -9,7 +9,9 @@ hamburgerButton.addEventListener('click', function () {
    hamburgerIcon.classList.toggle('fa-times');
 })
 
-const welcomeGuest = (x) => console.log(`Witaj gościu! Nazywam się ${authorName} i to jest mój ćwiczeniowy homepage. Będę wdzięczny, gdy w wolne chwili zrobisz code review. + 88________________________________
+const welcomeGuest = (x) => console.log(`Witaj gościu! Nazywam się ${authorName} i to jest mój ćwiczeniowy homepage. Będę wdzięczny, gdy w wolne chwili zrobisz code review. 
+
+88________________________________
 _+880______________________________
 _++88______________________________
 _++88______________________________
@@ -31,7 +33,7 @@ _______+++++++088888888888_______
 ________+++++++8888888888________
 ________+++++++0088888888________
 ________++++++0088888888_________
-`)
+`);
 
-welcomeGuest (authorName);
+welcomeGuest(authorName);
 
