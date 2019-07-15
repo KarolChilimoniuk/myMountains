@@ -17,7 +17,7 @@ Technologies I used are:
 
 ### How does it looks?
 ***
-[screenshot](https://github.com/KarolChilimoniuk/myMountains/blob/master/src/assets/img/screenshot.png)
+(https://github.com/KarolChilimoniuk/myMountains/blob/master/src/assets/img/screenshot.png)
 
 ### How to launch the page?
 ***
