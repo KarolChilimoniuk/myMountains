@@ -3,8 +3,6 @@
 .contact {
     display: flex;
     flex-direction: column;
-    grid-column-end: 4;
-    grid-column-start: 2;
     grid-row-end: 4;
     grid-row-start: 2;
     padding: 40px 0 40px 0;
@@ -24,13 +22,15 @@
             width: 190px;
         }
 
-        &__paragraph {
-            text-align: justify;
-
-            &--transform {
-                text-transform: uppercase;
+        &__link {
+            display: block;
+            color: #000;
+            text-align: center;
+            text-decoration: none;
+            text-transform: uppercase;
+            &:hover {
+                color: #fff;
             }
-
         }        
 
     }
