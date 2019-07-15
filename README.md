@@ -1,6 +1,6 @@
 # myMountains
----
-### Introduction and object
+
+### Introduction and goal
 ***
 Welcome to my site about polish mountains. It's my training project where I use techniques and technologies I learn during front-end course. I would be grateful if you do some code review during your free time. Heve fun! 
 [Link leads to online version is HERE](https://karolchilimoniuk.github.io/myMountains/)
