@@ -591,10 +591,6 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-grid-column-span: 2;
-  grid-column-end: 4;
-  -ms-grid-column: 2;
-      grid-column-start: 2;
   -ms-grid-row-span: 2;
   grid-row-end: 4;
   -ms-grid-row: 2;
@@ -617,10 +613,14 @@ body {
       border-top-right-radius: 45%;
       margin: auto;
       width: 190px; }
-    .contact .introduction__paragraph {
-      text-align: justify; }
-      .contact .introduction__paragraph--transform {
-        text-transform: uppercase; }
+    .contact .introduction__link {
+      display: block;
+      color: #000;
+      text-align: center;
+      text-decoration: none;
+      text-transform: uppercase; }
+      .contact .introduction__link:hover {
+        color: #fff; }
   .contact .form__container {
     -webkit-box-align: center;
         -ms-flex-align: center;
