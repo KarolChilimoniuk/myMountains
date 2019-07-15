@@ -7,8 +7,6 @@ Welcome to my site about polish mountains. It's my training project where I use 
 
 ### Technologies and Tools
 ***
-
-Technologies I used are:
 * HTML5
 * CSS3 + SASS
 * JavaScript
